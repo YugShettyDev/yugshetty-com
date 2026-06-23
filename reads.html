@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reads — Yug Shetty</title>
+    <meta name="description" content="Books and articles that shaped my thinking on technology, markets, psychology, and life.">
+    <script>
+        (function(){
+            var t = localStorage.getItem('yugshetty-theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Yug Shetty</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+                <a href="reads.html" class="nav-link">Reads</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Reads</h1>
+                <p class="page-subtitle">Books and articles that shaped my thinking.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="reads-list">
+                    <div class="read-item">
+                        <h2 class="read-title">Thinking, Fast and Slow</h2>
+                        <p class="read-author">by Daniel Kahneman</p>
+                        <p class="read-note">"The book that made me question every decision I'd ever made."</p>
+                        <div class="read-tags"><span class="tag">Psychology</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">The Almanack of Naval Ravikant</h2>
+                        <p class="read-author">by Eric Jorgenson</p>
+                        <p class="read-note">"Leverage, judgment, and specific knowledge — frameworks I return to constantly."</p>
+                        <div class="read-tags"><span class="tag">Thinking</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">Sapiens</h2>
+                        <p class="read-author">by Yuval Noah Harari</p>
+                        <p class="read-note">"Changed how I think about narratives and collective belief systems."</p>
+                        <div class="read-tags"><span class="tag">History</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">The Psychology of Money</h2>
+                        <p class="read-author">by Morgan Housel</p>
+                        <p class="read-note">"Wealth is what you don't see. A masterclass in behavioral finance."</p>
+                        <div class="read-tags"><span class="tag">Markets</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">Zero to One</h2>
+                        <p class="read-author">by Peter Thiel</p>
+                        <p class="read-note">"Contrarian thinking as a competitive advantage."</p>
+                        <div class="read-tags"><span class="tag">Business</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">Meditations</h2>
+                        <p class="read-author">by Marcus Aurelius</p>
+                        <p class="read-note">"2,000-year-old advice that still applies to every startup, market crash, and Monday morning."</p>
+                        <div class="read-tags"><span class="tag">Philosophy</span></div>
+                    </div>
+                    <div class="read-item">
+                        <h2 class="read-title">The Design of Everyday Things</h2>
+                        <p class="read-author">by Don Norman</p>
+                        <p class="read-note">"Made me see bad design everywhere — and understand why good design is invisible."</p>
+                        <div class="read-tags"><span class="tag">Design</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Exploring ideas at the intersection of technology, markets, and human behavior.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                    <a href="https://x.com/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">X</a>
+                    <a href="https://linkedin.com/in/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Yug Shetty</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

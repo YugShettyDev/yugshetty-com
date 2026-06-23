@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles — Yug Shetty</title>
+    <meta name="description" content="Long-form thinking on technology, markets, and the human mind.">
+    <script>
+        (function(){
+            var t = localStorage.getItem('yugshetty-theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Yug Shetty</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+                <a href="reads.html" class="nav-link">Reads</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Articles</h1>
+                <p class="page-subtitle">Long-form thinking on technology, markets, and the human mind.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filter-tags">
+                    <button class="filter-tag active" data-filter="all">All</button>
+                    <button class="filter-tag" data-filter="ai">AI</button>
+                    <button class="filter-tag" data-filter="software">Software</button>
+                    <button class="filter-tag" data-filter="markets">Markets</button>
+                    <button class="filter-tag" data-filter="psychology">Psychology</button>
+                </div>
+
+                <div class="articles-list">
+                    <div class="article-item" data-category="ai">
+                        <h2 class="article-title"><a href="#">The Attention Economy Is Bankrupting Our Minds</a></h2>
+                        <p class="article-excerpt">We've built an entire economy around capturing human attention, and we're only beginning to understand the cost.</p>
+                        <div class="article-meta">
+                            <span>Jun 15, 2026</span>
+                            <span class="separator"></span>
+                            <span>8 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="software">
+                        <h2 class="article-title"><a href="#">Why Every Developer Should Study Market Microstructure</a></h2>
+                        <p class="article-excerpt">The mechanics of order books, liquidity, and price discovery teach lessons that extend far beyond trading floors.</p>
+                        <div class="article-meta">
+                            <span>Jun 8, 2026</span>
+                            <span class="separator"></span>
+                            <span>6 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">Software</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="psychology">
+                        <h2 class="article-title"><a href="#">The Psychology of Compound Decisions</a></h2>
+                        <p class="article-excerpt">Small choices compound just like interest. Understanding this changes how you approach every decision you make.</p>
+                        <div class="article-meta">
+                            <span>May 28, 2026</span>
+                            <span class="separator"></span>
+                            <span>7 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">Psychology</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="ai">
+                        <h2 class="article-title"><a href="#">Building Calm Software in the Age of AI</a></h2>
+                        <p class="article-excerpt">What if software helped you think instead of demanding your attention? A case for calm technology.</p>
+                        <div class="article-meta">
+                            <span>May 15, 2026</span>
+                            <span class="separator"></span>
+                            <span>5 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="markets">
+                        <h2 class="article-title"><a href="#">What Markets Teach Us About Feedback Loops</a></h2>
+                        <p class="article-excerpt">Markets are the world's largest real-time feedback system. The patterns they reveal apply far beyond finance.</p>
+                        <div class="article-meta">
+                            <span>May 2, 2026</span>
+                            <span class="separator"></span>
+                            <span>9 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">Markets</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="psychology">
+                        <h2 class="article-title"><a href="#">The Illusion of Productivity</a></h2>
+                        <p class="article-excerpt">We've confused being busy with being effective. The most productive people often look like they're doing nothing.</p>
+                        <div class="article-meta">
+                            <span>Apr 18, 2026</span>
+                            <span class="separator"></span>
+                            <span>6 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">Psychology</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="ai">
+                        <h2 class="article-title"><a href="#">Second-Order Effects of Large Language Models</a></h2>
+                        <p class="article-excerpt">Everyone's talking about what LLMs can do. Few are asking what changes when everyone has access to them.</p>
+                        <div class="article-meta">
+                            <span>Apr 5, 2026</span>
+                            <span class="separator"></span>
+                            <span>10 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+
+                    <div class="article-item" data-category="psychology">
+                        <h2 class="article-title"><a href="#">Why I Stopped Optimizing and Started Thinking</a></h2>
+                        <p class="article-excerpt">Optimization is a trap disguised as progress. The real breakthroughs come from sitting with a problem.</p>
+                        <div class="article-meta">
+                            <span>Mar 22, 2026</span>
+                            <span class="separator"></span>
+                            <span>4 min read</span>
+                            <span class="separator"></span>
+                            <span class="tag">Psychology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Exploring ideas at the intersection of technology, markets, and human behavior.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                    <a href="https://x.com/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">X</a>
+                    <a href="https://linkedin.com/in/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Yug Shetty</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
