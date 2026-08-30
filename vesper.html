@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesper Todo — Project Showcase | Yug Shetty</title>
+    <meta name="description" content="Vesper Todo — An intentional, distraction-free task management application built with warm tactile aesthetics, calm workflows, and local-first persistence.">
+    <script>
+        (function(){
+            var t = localStorage.getItem('yugshetty-theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="vesper-body">
+    <header class="site-header" id="site-header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Yug Shetty</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+                <a href="reads.html" class="nav-link">Reads</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="vesper-page">
+        <!-- Ambient background glow elements -->
+        <div class="vesper-ambient-glow" aria-hidden="true"></div>
+
+        <div class="container vesper-container">
+            <!-- Back to Projects link -->
+            <a href="projects.html" class="back-link vesper-back-link">
+                ← Back to Projects
+            </a>
+
+            <!-- HERO SECTION -->
+            <section class="vesper-hero">
+                <div class="vesper-badge-wrap">
+                    <span class="vesper-badge">
+                        <span class="vesper-badge-dot"></span>
+                        Live Production Application
+                    </span>
+                    <span class="vesper-badge-sub">v0.1 &bull; Vanilla JS &amp; Supabase</span>
+                </div>
+
+                <h1 class="vesper-title">Vesper Todo</h1>
+                <p class="vesper-tagline">
+                    An intentional, distraction-free task management application built with warm tactile aesthetics, calm workflows, and local-first persistence.
+                </p>
+
+                <p class="vesper-hero-statement">
+                    Designed as an antidote to bloated enterprise trackers and gamified dopamine traps, Vesper offers a serene, tactile workspace where daily priorities are clarified and executed with quiet focus.
+                </p>
+
+                <div class="vesper-cta-group">
+                    <a href="https://vesper-kairodock.vercel.app/" target="_blank" rel="noopener noreferrer" class="vesper-btn vesper-btn-primary">
+                        <span>Open Vesper →</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                    <a href="https://github.com/YugShettyDev/Vesper" target="_blank" rel="noopener noreferrer" class="vesper-btn vesper-btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>View Source →</span>
+                    </a>
+                </div>
+
+                <!-- Interactive / Visual Showcase Component -->
+                <div class="vesper-preview-card">
+                    <div class="vesper-preview-header">
+                        <div class="vesper-preview-dots">
+                            <span class="dot-amber"></span>
+                            <span class="dot-terracotta"></span>
+                            <span class="dot-sage"></span>
+                        </div>
+                        <div class="vesper-preview-title">
+                            <span class="vesper-logo-mark">✧</span> Vesper — Today's Intentions
+                        </div>
+                        <div class="vesper-preview-actions">
+                            <span class="vesper-status-pill">Zen Mode: Active</span>
+                        </div>
+                    </div>
+                    <div class="vesper-preview-content">
+                        <div class="vesper-task-item completed">
+                            <div class="vesper-task-checkbox checked">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div class="vesper-task-details">
+                                <span class="vesper-task-text">Configure Supabase PostgreSQL Row Level Security (RLS) policies</span>
+                                <div class="vesper-task-meta">
+                                    <span class="vesper-chip chip-sage">Supabase Auth</span>
+                                    <span class="vesper-task-time">0.8s sync &bull; Realtime</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vesper-task-item active">
+                            <div class="vesper-task-checkbox"></div>
+                            <div class="vesper-task-details">
+                                <span class="vesper-task-text">Build custom Vanilla JS calendar with Day, 3-Day, Week &amp; Month views</span>
+                                <div class="vesper-task-meta">
+                                    <span class="vesper-chip chip-amber">Calendar Engine</span>
+                                    <span class="vesper-task-time">In Progress &bull; Native ES Modules</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vesper-task-item">
+                            <div class="vesper-task-checkbox"></div>
+                            <div class="vesper-task-details">
+                                <span class="vesper-task-text">Deploy Vercel serverless API endpoint for production configuration</span>
+                                <div class="vesper-task-meta">
+                                    <span class="vesper-chip chip-terracotta">Deployment</span>
+                                    <span class="vesper-task-time">Zero-Build Pipeline</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vesper-preview-footer">
+                        <span>Press <kbd>⌘K</kbd> to command &bull; <kbd>N</kbd> for quick capture &bull; <kbd>Z</kbd> for Zen focus</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT VESPER -->
+            <section class="vesper-section">
+                <div class="vesper-section-header">
+                    <span class="vesper-section-num">01</span>
+                    <h2 class="vesper-section-heading">About Vesper</h2>
+                </div>
+                <div class="vesper-narrative">
+                    <p class="vesper-lead">
+                        Vesper is a task management web application built around a simple idea: <strong>your tasks should live in a system that helps you actually organize your work, not just store a list of things to do.</strong>
+                    </p>
+                    <p>
+                        I built Vesper as a real, usable application from the ground up, rather than as a static concept or UI experiment. It includes authenticated accounts, persistent data, and synchronization across devices, allowing the same workspace to remain accessible whether you're using Vesper on a desktop or mobile device.
+                    </p>
+                    <p>
+                        The project is also an experiment in how far a personal task-management application can go beyond the traditional todo list. The current version establishes the foundation; future iterations can build more intelligence around how people define goals, break them down, plan their time, and execute them.
+                    </p>
+                    <p>
+                        Vesper is currently deployed and actively usable.
+                    </p>
+                    <p>
+                        <strong>Built by Yug Shetty.</strong>
+                    </p>
+                </div>
+            </section>
+
+            <!-- FEATURES -->
+            <section class="vesper-section">
+                <div class="vesper-section-header">
+                    <span class="vesper-section-num">02</span>
+                    <h2 class="vesper-section-heading">Key Features</h2>
+                </div>
+                <div class="vesper-features-grid">
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Intentional Task Organization</h3>
+                        <p class="vesper-feature-desc">
+                            A structured system designed to help you actively organize your priorities rather than simply maintaining an overwhelming, static to-do list.
+                        </p>
+                    </div>
+
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Custom Multi-View Calendar</h3>
+                        <p class="vesper-feature-desc">
+                            Custom-built Vanilla JavaScript calendar featuring Day, 3-Day, Week, and Month views for intuitive scheduling and time allocation.
+                        </p>
+                    </div>
+
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Auth &amp; Multi-Device Sync</h3>
+                        <p class="vesper-feature-desc">
+                            Authenticated user accounts via Supabase Auth (Email &amp; Google OAuth) with PostgreSQL Realtime synchronization across desktop and mobile.
+                        </p>
+                    </div>
+
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Row Level Security (RLS)</h3>
+                        <p class="vesper-feature-desc">
+                            Granular database-level security policies ensuring complete isolation and privacy for your personal workspace and task records.
+                        </p>
+                    </div>
+
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Native ES Modules &amp; Zero-Build</h3>
+                        <p class="vesper-feature-desc">
+                            Lightweight zero-build architecture running directly in modern browsers without heavy compilation pipelines or framework overhead.
+                        </p>
+                    </div>
+
+                    <div class="vesper-feature-card">
+                        <div class="vesper-feature-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        </div>
+                        <h3 class="vesper-feature-title">Warm Editorial Aesthetics</h3>
+                        <p class="vesper-feature-desc">
+                            Crafted with Fraunces serif typography, soft linen textures, honey amber ambient glows, and terracotta accents that feel warm and human.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESIGN SYSTEM -->
+            <section class="vesper-section">
+                <div class="vesper-section-header">
+                    <span class="vesper-section-num">03</span>
+                    <h2 class="vesper-section-heading">Design Identity &amp; Visual System</h2>
+                </div>
+                <p class="vesper-narrative-lead">
+                    Vesper replaces clinical monochrome interfaces with a tactile editorial aesthetic inspired by physical notebook paper, dark roasted espresso, and ambient evening light.
+                </p>
+                <div class="vesper-design-palette">
+                    <div class="vesper-palette-item">
+                        <div class="vesper-swatch swatch-espresso"></div>
+                        <div class="vesper-swatch-info">
+                            <span class="swatch-name">Warm Espresso</span>
+                            <span class="swatch-role">Deep grounding canvas</span>
+                        </div>
+                    </div>
+                    <div class="vesper-palette-item">
+                        <div class="vesper-swatch swatch-linen"></div>
+                        <div class="vesper-swatch-info">
+                            <span class="swatch-name">Linen Paper</span>
+                            <span class="swatch-role">Natural tactile surface</span>
+                        </div>
+                    </div>
+                    <div class="vesper-palette-item">
+                        <div class="vesper-swatch swatch-amber"></div>
+                        <div class="vesper-swatch-info">
+                            <span class="swatch-name">Honey Amber</span>
+                            <span class="swatch-role">Active focus &amp; glow</span>
+                        </div>
+                    </div>
+                    <div class="vesper-palette-item">
+                        <div class="vesper-swatch swatch-terracotta"></div>
+                        <div class="vesper-swatch-info">
+                            <span class="swatch-name">Terracotta</span>
+                            <span class="swatch-role">Priority &amp; energy</span>
+                        </div>
+                    </div>
+                    <div class="vesper-palette-item">
+                        <div class="vesper-swatch swatch-sage"></div>
+                        <div class="vesper-swatch-info">
+                            <span class="swatch-name">Sage Green</span>
+                            <span class="swatch-role">Serene completion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vesper-type-card">
+                    <div class="vesper-type-spec">
+                        <span class="type-label">Display &amp; Editorial Heading</span>
+                        <div class="type-sample-serif">Fraunces — Optical Display Serif</div>
+                        <p class="type-desc">A distinctive, variable serif with soft fluid curves that brings character and warmth to application titles and focus modes.</p>
+                    </div>
+                    <div class="vesper-type-spec">
+                        <span class="type-label">Interface &amp; Body Sans</span>
+                        <div class="type-sample-sans">Outfit &amp; Satoshi — Clean Geometrics</div>
+                        <p class="type-desc">High-legibility sans-serif balanced with generous open counters for effortless scannability and task reading.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BUILT WITH -->
+            <section class="vesper-section">
+                <div class="vesper-section-header">
+                    <span class="vesper-section-num">04</span>
+                    <h2 class="vesper-section-heading">Built With</h2>
+                </div>
+                <div class="vesper-tech-grid">
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Frontend &amp; Core</span>
+                        <span class="tech-name">HTML5, CSS3, Vanilla JavaScript</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Architecture</span>
+                        <span class="tech-name">Native ES Modules (Zero-Build, No Frameworks)</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Backend &amp; Database</span>
+                        <span class="tech-name">Supabase PostgreSQL</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Authentication</span>
+                        <span class="tech-name">Supabase Auth (Email/Password + Google OAuth)</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Realtime Sync</span>
+                        <span class="tech-name">Supabase Realtime / PostgreSQL Changes</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Security</span>
+                        <span class="tech-name">Supabase Row Level Security (RLS)</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Deployment &amp; Serverless</span>
+                        <span class="tech-name">Vercel + Serverless API Endpoint</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Calendar System</span>
+                        <span class="tech-name">Custom Vanilla JS (Day / 3-Day / Week / Month)</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Client Storage</span>
+                        <span class="tech-name">localStorage (Preferences, Migration, Time Blocks)</span>
+                    </div>
+                    <div class="vesper-tech-pill">
+                        <span class="tech-category">Version Control</span>
+                        <span class="tech-name">Git + GitHub</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CALL TO ACTION BANNER -->
+            <section class="vesper-cta-section">
+                <div class="vesper-cta-card">
+                    <h3 class="vesper-cta-title">Experience Vesper Todo</h3>
+                    <p class="vesper-cta-desc">
+                        A focused, tactile workspace designed to bring intention back to your daily workflow.
+                    </p>
+                    <div class="vesper-cta-buttons">
+                        <a href="https://vesper-kairodock.vercel.app/" target="_blank" rel="noopener noreferrer" class="vesper-btn vesper-btn-primary">
+                            <span>Open Vesper →</span>
+                        </a>
+                        <a href="https://github.com/YugShettyDev/Vesper" target="_blank" rel="noopener noreferrer" class="vesper-btn vesper-btn-secondary">
+                            <span>View Source →</span>
+                        </a>
+                        <a href="projects.html" class="vesper-btn vesper-btn-secondary">
+                            <span>← Back to Projects</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Exploring ideas at the intersection of technology, markets, and human behavior.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/YugShettyDev" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                    <a href="https://x.com/yug_shetty" target="_blank" rel="noopener noreferrer" class="footer-link">X</a>
+                    <a href="https://linkedin.com/in/yugshetty" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Yug Shetty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

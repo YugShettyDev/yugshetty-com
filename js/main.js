@@ -101,7 +101,9 @@
     var href = allNavLinks[j].getAttribute("href");
     if (
       href === currentPage ||
-      (currentPage === "" && href === "index.html")
+      (currentPage === "" && href === "index.html") ||
+      (currentPage === "vesper.html" && href === "projects.html") ||
+      (currentPage === "attention-economy.html" && href === "articles.html")
     ) {
       allNavLinks[j].classList.add("active");
     }
