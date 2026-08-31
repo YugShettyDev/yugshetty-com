@@ -137,5 +137,28 @@
         }
       });
     }
+  // ========================================
+  // LIVE STATUS WIDGET
+  // ========================================
+  var statusTextEl = document.getElementById("status-text");
+  var statusTimeEl = document.getElementById("status-time");
+
+  if (statusTextEl && statusTimeEl) {
+    fetch("data/status.json?t=" + Date.now())
+      .then(function (res) {
+        if (!res.ok) throw new Error("Status fetch error");
+        return res.json();
+      })
+      .then(function (data) {
+        if (data.status) {
+          statusTextEl.textContent = data.status;
+        }
+        if (data.updated) {
+          statusTimeEl.textContent = data.updated;
+        }
+      })
+      .catch(function () {
+        // Keeps the default static content present in the HTML
+      });
   }
 })();
