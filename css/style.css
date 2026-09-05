@@ -1142,11 +1142,13 @@ p:last-child {
     top: 64px;
     left: 0;
     right: 0;
+    z-index: 105;
     flex-direction: column;
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border);
     padding: var(--space-base) var(--space-base) var(--space-lg);
     gap: var(--space-xs);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: background-color var(--transition-slow),
       border-color var(--transition-slow);
   }

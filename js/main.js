@@ -52,14 +52,22 @@
     });
   }
 
-  // React to system preference changes (only when no stored preference)
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", function (e) {
-      if (!getStoredTheme()) {
-        htmlEl.setAttribute("data-theme", e.matches ? "dark" : "light");
-      }
-    });
+  // React to system preference changes
+  var darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  function handleSystemThemeChange(e) {
+    var newTheme = e.matches ? "dark" : "light";
+    htmlEl.setAttribute("data-theme", newTheme);
+    try {
+      localStorage.removeItem(THEME_KEY);
+    } catch (err) {
+      // localStorage unavailable — fail silently
+    }
+  }
+  if (darkModeMediaQuery.addEventListener) {
+    darkModeMediaQuery.addEventListener("change", handleSystemThemeChange);
+  } else if (darkModeMediaQuery.addListener) {
+    darkModeMediaQuery.addListener(handleSystemThemeChange);
+  }
 
   // ========================================
   // MOBILE NAVIGATION
@@ -137,6 +145,8 @@
         }
       });
     }
+  }
+
   // ========================================
   // LIVE STATUS WIDGET
   // ========================================
